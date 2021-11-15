@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="style1.css">
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница проекта о Петре1 и его реформах</title>
+</head>
+<nav>
+    <a name="#tops"></a>
+    <ul>
+        <li><a href="index.html">Главная страница о Петре 1</a></li>
+        <li><a href="chat.html">Переписки историков о Петре1 и его реформах</a></li>
+        <li><a href="menu.html">Меню для перехода на разные страницы</a></li>
+    </ul>
+</ul>
+</nav>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+                e.keyCode === 86 ||
+                e.keyCode === 85 ||
+                e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    $(document).keypress("u",function(e) {
+        if(e.ctrlKey)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    });
+</script>
+<p>Петр I. Раннее детство</p>
+    <img src="img/">
+    <p>Информация о Петре 1. Раннее детство.</p>
+    <a href="text/Раннее детство Петра1.html"><p>Подробнее...</p></a>
+    <p>Областная реформа</p>
+    <img src="img/">
+    <iframe width="727" height="409" src="https://www.youtube.com/embed/GlnS5RtTq1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>sidbj</p>
+    <a href="text/Облостная реформа.html"><p>Подробнее...</p></a>
+    <p>Судебная реформа</p>
+    <img src="img/">
+    <p>Тут будет маленькая информация о судебных реформах</p>
+    <a href="text/Судебная реформа.html"><p>Подробнее...</p></a>
+    <p>Военная реформа</p>
+    <img src="img/">
+    <a href="text/Военная реформа.html"><p>Подробнее...</p></a>
+    <p>Церковная реформа</p>
+    <img src="img/">
+    <a href="text/Церковная реформа.html"><p>Подробнее...</p></a>
+    <p>Финансовая реформа</p>
+    <img src="img/">
+    <a href="text/Финансовая реформа.html"><p>Подробнее...</p></a>
+    <p>Реформы в промышленности и торговле</p>
+    <img src="img/">
+    <a href="text/Реформы в промышленности и торговле.html"><p>Подробнее...</p></a>
+    <p>Реформа образования</p>
+    <img src="img/">
+    <a href=""><p>Подробнее...</p></a>
+    <p>Указ о престолонаследовании</p>
+    <img src="img/">
+    <a href=""><p>Подробнее...</p></a>
+<button><a href="##tops "><img src="img/Иконка вверх.png" width="100px" height="100px"></a></button>
+<footer class="footer">
+    <hr>
+    &copy; Этот сайт разработан для изучения истории и каждый человек на нашем сайте может много узнать о Петре1 и его реформах.
+</footer>
+</body>
+</html>

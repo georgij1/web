@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="style1.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Список тем</title>
+</head>
+<body>
+<script>
+    document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+                e.keyCode === 86 ||
+                e.keyCode === 85 ||
+                e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    $(document).keypress("u",function(e) {
+        if(e.ctrlKey)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    });
+</script>
+        <ul>
+            <h1>Список тем, которые представены в нашем проекте:</h1>
+            <li><a href="">Петр I. Раннее детство</a></li>
+            <li><a href="">Петр I. Мысли о реформах</a></li>
+            <li><a href="">Областная реформа</a></li>
+            <li><a href="">Судебная реформа</a></li>
+            <li><a href="">Военная реформа</a></li>
+            <li><a href="">Церковная реформа</a></li>
+            <li><a href="">Финансовая реформа</a></li>
+            <li><a href="">Реформы в промышленности и торговле</a></li>
+            <li><a href="">Реформа образования</a></li>
+            <li><a href="">Указ о престолонаследовании</a></li>
+        </ul>
+</body>
+</html>

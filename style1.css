@@ -1,0 +1,213 @@
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+body{
+    background-color: white;
+}
+
+.darker {
+    border-color: blue;
+    background-color: red;
+    border-radius: 60px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+footer{
+    display: block;
+    background-color: green;
+    margin: auto auto;
+    height: 160px;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+nav ul ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
+
+nav ul ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
+
+.time-right {
+    float: inherit;
+    color: darkgray;
+    padding-top: 1em;
+}
+
+.time-bottom{
+    float: right;
+    color: blue;
+}
+
+.time-left {
+    float: right;
+    color: green;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button5 {
+    border-radius: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 60px 15px;
+}
+
+.modal__content {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px;
+    background: #f9f9f9;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 5px 15px black;
+}
+
+.modal__close-button {
+    background: #ff0000;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+nav {
+    margin: 100px 0;
+    background-color: #E64A19;
+}
+
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;
+    background-color: #E64A19;
+}
+
+nav a {
+    display:block;
+    padding:0 10px;
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    background-color: #000000;
+}
+
+.modal__close-button:hover {
+    transition: .3s;
+    transform: rotate(180deg);
+}
+
+.modal__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.modal__description {
+    font-size: 1.125rem;
+}
+.card{
+    margin: 40px 40px 40px 40px;
+}
